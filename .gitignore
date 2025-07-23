@@ -1,0 +1,14 @@
+# Node backend
+/backend/node_modules/
+/backend/dist/
+/backend/*.log
+/backend/.env
+
+# React frontend
+/frontend/node_modules/
+/frontend/build/
+/frontend/dist/
+/frontend/.env
+/frontend/.cache/
+
+/node_modules/
