@@ -6,7 +6,7 @@ dotenv.config();
 const connectDatabase = async (): Promise<void> => {
   try {
     const mongoUri =
-      process.env.MONGODB_URI || 'mongodb://localhost:27017/laravel-react';
+      process.env.MONGODB_URI || 'mongodb://localhost:27017/react-nodejs';
 
     await mongoose.connect(mongoUri);
     console.log('✅ MongoDB connected successfully');
