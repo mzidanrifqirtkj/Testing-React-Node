@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import routes from './routes'; // Tambahkan ini
 
 // Load environment variables
 dotenv.config();
@@ -20,5 +21,8 @@ app.get('/', (req, res) => {
     status: 'Server is running!',
   });
 });
+
+// API Routes
+app.use('/api', routes); // Tambahkan ini
 
 export default app;
